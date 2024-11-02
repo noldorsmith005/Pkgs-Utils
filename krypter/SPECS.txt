@@ -1,0 +1,4 @@
+Krypter:
+
+    Encrypts and Decrypts files based on custom key.
+    Includes authentication.
