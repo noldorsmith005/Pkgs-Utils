@@ -8,7 +8,7 @@ template <typename K, typename V>
 
 struct Map {
     private:
-        // Key Value Pair Bucket Structure //
+        // Key Value Pair Structure //
         template <typename T = K, typename D = V>
 
         struct KVP {
@@ -61,7 +61,8 @@ struct Map {
                         for (int c = 0; c < curr_index; c++) {
                             backing[c] = old_array[c];
                         }
-                        backing[curr_index] = &item;
+                        KVP<K, V> *new_item = new KVP<K, V>(item.key, item.value);
+                        backing[curr_index] = new_item;
                     }
                     curr_index += 1;
                 }
@@ -99,7 +100,7 @@ struct Map {
         };
 
 
-    // Main Class //
+    // Main //
         int size;
         int filled;
         double max_density;
