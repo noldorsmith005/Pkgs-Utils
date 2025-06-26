@@ -3,7 +3,7 @@ This repository is a collection of smaller subprojects created to supplement lar
   A list of these projects is given below. An '~' next to the project name indicates that it is a future project, and not currently developed. 
 
 ## Hextract
-  A C program which extracts the raw data from a given file and returns those contents in hexadecimal format, along with file length and (optionally) line numbers.
+  A C program which extracts the raw data from a given file and returns that data in hexadecimal format, along with file length and (optionally) line numbers.
 
 ## List++
   A custom dynamic array class, equivalent to Java's *ArrayList*, written in C++.
